@@ -1,0 +1,161 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <img src="./food healthy logo.png" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Category</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Customers</a></li>
+                <li><a href="">About</a></li>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </ul>
+        </div>
+    </section>
+    <div class="title">
+        <h2>Our Product</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident deserunt ratione sequi iure accusantium
+            itaque praesentium a, dignissimos culpa, commodi aspernatur, facere laudantium dolores!
+        </p>
+    </div>
+    <div class="box1">
+        <img src="./OIP.jpg" alt="">
+        <br>
+        <h3>strawberry</h3>
+        <p>500gram</p>
+        <h3 class="h3.1">$4.00</h3>
+        <button class="box.b">Add to card</button>
+    </div>
+    <div class="box2">
+        <img src="./th (1).jpg" alt="">
+        <br>
+        <h3>orange</h3>
+        <p>500gram</p>
+        <h3 class="h3.1">$3.00</h3>
+        <button class="box.b">Add to card</button>
+    </div>
+    <div class="box3">
+        <img src="./th (2).jpg" alt="">
+        <br>
+        <h3>banana</h3>
+        <p>500gram</p>
+        <h3 class="h3.1">$5.00</h3>
+        <button class="box.b">Add to card</button>
+    </div>
+    <div class="box4">
+        <img src="./th.jpg" alt="">
+        <br>
+        <h3>apple</h3>
+        <p>500gram</p>
+        <h3 class="h3.1">$2.00</h3>
+        <button class="box.b">Add to card</button>
+    </div>
+    <div class="lasttitle" id="show">
+
+        <button onclick="toggleOpen()">See More ...</button>
+
+    </div>
+  
+    <div class="all">
+
+        <div>
+            <select id="theme" onchange="switchTheme()">
+                <option value="light">light</option>
+                <option value="dark">dark</option>
+            </select>
+        </div>
+    </div>
+    
+    <script>
+        function switchTheme() {
+            const theme = document.getElementById("theme").value;
+            document.body.className = theme;
+        }
+        function toggleOpen() {
+  const element = document.getElementById("isOpen");
+
+  if (element.style.display === "block") {
+    element.style.display = "none";
+  } else {
+    element.style.display = "block";
+  }
+} 
+        
+
+
+    </script>
+    <style>
+        body.light {
+            background-color: rgb(145, 210, 236);
+            color: black;
+        }
+
+        body.dark {
+            background-color: rgb(244, 247, 248);
+        }
+
+        .all {
+            margin: auto;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: -615;
+            margin-left: 50px;
+
+        }
+    </style>
+
+    <!-- </html> -->
+<div class="allbox">
+    <div id="isOpen" class="boxpart2">
+
+        <div id="isOpen" class="part1">
+            <img src="./OIP (1).jpg" alt="">
+            <h3>Fruit</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+            <button>Buy</button>
+        </div>
+        <div class="part2">
+            <img src="./OIP (1).jpg" alt="">
+            <h3>Fruit</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+            <button>Buy</button>
+        </div>
+    </div>
+    <div class="boxpart3">
+    <div class="part3">
+        <img src="./OIP (1).jpg" alt="">
+        <h3>Fruit</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+        <button>Buy</button>
+    </div>
+    <div class="part4">
+        <img src="./OIP (1).jpg" alt="">
+        <h3>Fruit</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+        <button>Buy</button>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
